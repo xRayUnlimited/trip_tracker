@@ -12,10 +12,12 @@
   height: 150px;
   padding: 20px;
   color: white;
+  text-align: center;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 10px;
+  text-align: center;
 }
 
 .App-intro {
@@ -23,6 +25,10 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -7,22 +7,18 @@ class App extends Component {
     return (
     <div>
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+        <header style={styles.header}>
+          <h1 className="App-title">Welcome to Your Trip Tracker!</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
       <div className="row">
-      <div className="col s12 m6">
+      <div className="col s6 offset-s3">
         <div className="card">
           <div className="card-image">
-            <img src="images/sample-1.jpg" />
-            <span className="card-title">Card Title</span>
-            <a className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></a>
+            <img src="http://ritzybee.typepad.com/.a/6a00e5503c88988833013481999d8f970c-800wi" />
+            <a className="btn-floating halfway-fab waves-effect waves-light teal"><i className="small material-icons">airport_shuttle</i></a>
           <div className="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            <p>View All Trips!</p>
           </div>
         </div>
         </div>
@@ -32,6 +28,18 @@ class App extends Component {
 
     );
   }
+}
+
+const styles = {
+  header: {
+    backgroundColor: "#18726B",
+    color: "white",
+    height: "150px",
+    padding: "20px",
+    textAlign: "center",
+    fontFamily: 'Coiny',
+  },
+
 }
 
 export default App;
