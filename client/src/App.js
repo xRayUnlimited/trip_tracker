@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Trip from './components/Trip'
+import LocationList from './components/LocationList'
 
 class App extends Component {
   render() {
