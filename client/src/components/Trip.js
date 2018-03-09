@@ -48,7 +48,7 @@ class Trip extends React.Component {
               <div className="col s12 m6">
                 <div className="card">
                   <div className="card-image">
-                    <img src="https://wikitravel.org/upload/en/2/23/Us-ca-sanfran-goldengate.jpg"/>
+                    <img src="https://wikitravel.org/upload/en/2/23/Us-ca-sanfran-goldengate.jpg" alt = "San Fransisco" />
                       <span className="card-title">San Francisco</span>
                   </div>
                   <div className="card-content">
@@ -63,7 +63,7 @@ class Trip extends React.Component {
               <div className="col s12 m6">
                 <div className="card">
                   <div className="card-image">
-                    <img src="https://www.lakepowell.com/media/167205/houseboat-beached-scenic_1000x667.jpg"/>
+                    <img src="https://www.lakepowell.com/media/167205/houseboat-beached-scenic_1000x667.jpg" alt = "Lake Powell" />
                       <span className="card-title">Lake Powell</span>
                   </div>
                   <div className="card-content">
@@ -78,7 +78,7 @@ class Trip extends React.Component {
               <div className="col s12 m6">
                 <div className="card">
                   <div className="card-image">
-                    <img src="https://blogmedia.evbstatic.com/wp-content/uploads/rally/2017/12/29184811/Chicago_Tom-Shockey2.jpg"/>
+                    <img src="https://blogmedia.evbstatic.com/wp-content/uploads/rally/2017/12/29184811/Chicago_Tom-Shockey2.jpg" alt = "Chicago"/>
                       <span className="card-title">Chicago</span>
                   </div>
                   <div className="card-content">
@@ -93,7 +93,7 @@ class Trip extends React.Component {
               <div className="col s12 m6">
                 <div className="card">
                   <div className="card-image">
-                    <img src="https://fthmb.tqn.com/SfTQtlQOYOR5qDyCi1tVtQZpwfE=/960x0/filters:no_upscale()/2231903771_5f260e460a_o-56b7d8425f9b5829f83c5ec0.jpg"/>
+                    <img src="https://fthmb.tqn.com/SfTQtlQOYOR5qDyCi1tVtQZpwfE=/960x0/filters:no_upscale()/2231903771_5f260e460a_o-56b7d8425f9b5829f83c5ec0.jpg" alt = "Venice" />
                       <span className="card-title">Venice</span>
                   </div>
                   <div className="card-content">
@@ -108,7 +108,7 @@ class Trip extends React.Component {
               <div className="col s12 m6">
                 <div className="card">
                   <div className="card-image">
-                    <img src="http://gotravelaz.com/wp-content/uploads/images/Glacier_National_Park.jpg"/>
+                    <img src="http://gotravelaz.com/wp-content/uploads/images/Glacier_National_Park.jpg" alt = "Glacier National Park"/>
                       <span className="card-title">Glacier National Park</span>
                   </div>
                   <div className="card-content">
