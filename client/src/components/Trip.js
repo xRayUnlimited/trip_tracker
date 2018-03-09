@@ -32,6 +32,8 @@ class Trip extends React.Component {
               <h2 className="App-title">Trips</h2>
             </header>
           </div>
+          <button className="waves-effect teal lighten-3 btn"
+          onClick={() => this.addTrip() }> Add Trip </button>
           <div>
             <div className="row">
               <div className="col s12 m6">
@@ -109,7 +111,6 @@ class Trip extends React.Component {
               </div>
             </div>
           </div>
-        <button onClick={() => this.addTrip() }> Add Trip</button>
         </div>
       )
     }
