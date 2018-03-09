@@ -69,7 +69,7 @@ class Trip extends React.Component {
               <div className="col s12 m6">
                 <div className="card">
                   <div className="card-image">
-                    <img src="https://d2t1047w253zzm.cloudfront.net/pm-cities/chicago-il-apartments-for-rent.jpg.md.jpg/"/>
+                    <img src="https://blogmedia.evbstatic.com/wp-content/uploads/rally/2017/12/29184811/Chicago_Tom-Shockey2.jpg"/>
                       <span className="card-title">Chicago</span>
                   </div>
                   <div className="card-content">
