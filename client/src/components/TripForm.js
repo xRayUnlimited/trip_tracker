@@ -1,15 +1,20 @@
 import React from 'react'
 
 class TripForm extends React.Component {
+ state = {}
 
 
   render(){
     return(
       <div>
-        Here's a Trip Form 
-      </div> 
-    )
-  }
-}
-
-export default TripForm
+        <form onSubmit={this.handleSubmit}>
+        <label>
+        <h4>Name:</h4> 
+          <input type="text" value={this.state.name} />
+          </label>
+        <input type="submit" value="Submit" />
+        </form>
+      </div>
+    )}
+  } 
+export default TripForm;

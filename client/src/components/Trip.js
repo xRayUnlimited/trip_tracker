@@ -38,7 +38,7 @@ class Trip extends React.Component {
         <div>
           <div className="App">
             <header style={styles.header}>
-              <h2 className="App-title">Trips</h2>
+              <h2 className="App-title">Add Trips</h2>
             </header>
           </div>
           <button className="waves-effect teal lighten-3 btn"
