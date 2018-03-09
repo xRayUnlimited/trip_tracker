@@ -3,7 +3,10 @@ class Api::TripsController < ApplicationController
   
   #GET
   def index
-    render json: Trip.all
+    @trip = Trip.all
+    @location = @trip.locations.all
+
+    render json: Trip.all 
   end
   #GET
   def show
