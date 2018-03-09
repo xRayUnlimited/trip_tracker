@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class App extends Component {
   render() {
     return (
@@ -17,7 +16,7 @@ class App extends Component {
             <img src="http://ritzybee.typepad.com/.a/6a00e5503c88988833013481999d8f970c-800wi" alt="person on bmw"/>
             <a className="btn-floating halfway-fab waves-effect waves-light teal"><i className="small material-icons">airport_shuttle</i></a>
           <div className="card-content">
-            <p>View All Trips!</p>
+            <a href="<Trip />">View All Trips!</a>
           </div>
         </div>
         </div>
