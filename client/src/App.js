@@ -43,7 +43,6 @@ class App extends Component {
                 <div className="card-content">
                   <p style={ styles.link } onClick={() => this.viewTrip()}>View All Trips!</p>
                   <br />
-                  <p style={ styles.link } onClick={ () => this.addTrip()}>Add A Trip</p>
                 </div>
               </div>
             </div>
