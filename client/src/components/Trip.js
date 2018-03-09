@@ -1,46 +1,10 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
 
-const styles = {
-  complete: {
-    textDecoration: 'line-through',
-    color: 'grey',
-  },
-  pointer: { cursor: 'pointer' },
-}
+const Trip = () => (
+    <p>Trip stuff goes here, 
+    call it in programatically instead of manually
+    </p>
+);
 
-const Trip = ({
-  id,
-  complete,
-  name,
-  updateTrip,
-  deleteTrip,
-}) => (
-  <div className="col s12">  
-    <div className="col m8">
-      <div 
-        style={ complete ? styles.complete : {} }
-        className="center"
-      >
-        {name}
-      </div>
-    </div>
-    <div className="col m2">
-      <input
-        id={`item-${id}`}
-        type="checkbox"
-        defaultChecked={complete}
-        onClick={() => updateTrip(id)}
-      />
-      <label htmlFor={`item-${id}`}>Complete?</label>
-    </div>
-    <div 
-      className="col m2"
-      style={styles.pointer}
-      onClick={() => deleteTrip(id)}
-    >
-      X
-    </div>
-  </div>
-)
-             
-export default Trip
+export default Trip;

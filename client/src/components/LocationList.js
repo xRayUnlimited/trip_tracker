@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
 
 class LocationList extends React.Component {
 
@@ -7,8 +8,6 @@ class LocationList extends React.Component {
       <div> This is the location list component </div>
     )
   }
-
-
 }
 
 export default LocationList;

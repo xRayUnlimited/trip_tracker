@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Trip from './components/Trip'
-import LocationList from './components/LocationList'
+
 
 class App extends Component {
   render() {
@@ -15,7 +14,7 @@ class App extends Component {
       <div className="col s6 offset-s3">
         <div className="card">
           <div className="card-image">
-            <img src="http://ritzybee.typepad.com/.a/6a00e5503c88988833013481999d8f970c-800wi" />
+            <img src="http://ritzybee.typepad.com/.a/6a00e5503c88988833013481999d8f970c-800wi" alt="person on bmw"/>
             <a className="btn-floating halfway-fab waves-effect waves-light teal"><i className="small material-icons">airport_shuttle</i></a>
           <div className="card-content">
             <p>View All Trips!</p>
