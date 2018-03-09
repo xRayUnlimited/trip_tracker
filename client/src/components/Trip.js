@@ -16,14 +16,22 @@ class Trip extends React.Component {
      if (addTrip) {
       return(
         <div>
-        <h3>Trips</h3>
+        <div className="App">
+          <header style={styles.header}>
+            <h2 className="App-title">Trips</h2>
+          </header>
+        </div>
         <TripForm />
         </div>
       )
     } else {
       return(
         <div>
-        <h3>Trips</h3>
+          <div className="App">
+            <header style={styles.header}>
+              <h2 className="App-title">Trips</h2>
+            </header>
+          </div>
           <div>
             <div className="row">
                 <div className="col s12 m6">
@@ -48,5 +56,20 @@ class Trip extends React.Component {
   }
 }
 
+const styles = {
+  header: {
+    backgroundColor: "#18726B",
+    color: "white",
+    height: "150px",
+    padding: "20px",
+    textAlign: "center",
+    fontFamily: 'Coiny',
+  },
+  link: {
+    color: 'blue',
+    cursor: 'pointer',
+  }
+
+}
 
 export default Trip;
