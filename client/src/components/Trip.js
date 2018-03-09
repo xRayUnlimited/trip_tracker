@@ -103,7 +103,12 @@ class Trip extends React.Component {
                       <span className="card-title">Glacier National Park</span>
                   </div>
                   <div className="card-content">
-                    <p>Glacier National Park is a 1,583-sq.-mi. wilderness area in Montana's Rocky Mountains, with glacier-carved peaks and valleys running to the Canadian border. It's crossed by the mountainous Going-to-the-Sun Road. Among more than 700 miles of hiking trails, it has a route to photogenic Hidden Lake. Other activities include backpacking, cycling and camping. Diverse wildlife ranges from mountain goats to grizzly bears.</p>
+                    <p>
+                      Glacier National Park is a 1,583-sq.-mi. wilderness area in Montana's Rocky Mountains,
+                      with glacier-carved peaks and valleys running to the Canadian border.
+                      It's crossed by the mountainous Going-to-the-Sun Road. Among more than 700 miles of hiking
+                      trails, it has a route to photogenic Hidden Lake. Other activities include backpacking,
+                      cycling and camping. Diverse wildlife ranges from mountain goats to grizzly bears.</p>
                       <a className="btn-floating teal"><i className="material-icons">visibility</i></a>
                       <a className="btn-floating red"><i className="material-icons">remove_circle_outline</i></a>
                   </div>
