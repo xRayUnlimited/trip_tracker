@@ -5,7 +5,7 @@ class Trip extends React.Component {
     render() {
       return(
         <div>
-        <h3>Trips></h3>
+        <h3>Trips</h3>
         
         </div>
       )
