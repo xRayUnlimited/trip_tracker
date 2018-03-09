@@ -3,17 +3,11 @@ import Trip from './components/Trip';
 import LocationList from './components/LocationList';
 
 class App extends Component {
-  state={ tripsShowing: false, addTrip: false }
+  state={ tripsShowing: false }
 
   viewTrip() {
     const {tripsShowing} = this.state
     this.setState({ tripsShowing: !tripsShowing })
-
-  }
-
-  addTrip = () => {
-    const {addTrip} = this.state
-    this.setState({ addTrip: !addTrip })
   }
 
   render() {
@@ -21,10 +15,6 @@ class App extends Component {
       if (tripsShowing) {
         return(
           <Trip />
-        )
-      } else if (addTrip) {
-        return(
-          <LocationList />
         )
       } else
       return (
@@ -43,7 +33,6 @@ class App extends Component {
                 <div className="card-content">
                   <p style={ styles.link } onClick={() => this.viewTrip()}>View All Trips!</p>
                   <br />
-                  <p style={ styles.link } onClick={ () => this.addTrip()}>Add A Trip</p>
                 </div>
               </div>
             </div>
