@@ -1,27 +1,54 @@
 import React, { Component } from 'react';
+import Trip from './components/Trip';
+import LocationList from './components/LocationList';
 
 class App extends Component {
+  state={ tripsShowing: false, addTrip: false }
+
+  viewTrip() {
+    const {tripsShowing} = this.state
+    this.setState({ tripsShowing: !tripsShowing })
+
+  }
+
+  addTrip = () => {
+    const {addTrip} = this.state
+    this.setState({ addTrip: !addTrip })
+  }
+
   render() {
-    return (
-    <div>
-      <div className="App">
-        <header style={styles.header}>
-          <h1 className="App-title">Welcome to Your Trip Tracker!</h1>
-        </header>
-      </div>
-      <div className="row">
-      <div className="col s6 offset-s3">
-        <div className="card">
-          <div className="card-image">
-            <img src="http://ritzybee.typepad.com/.a/6a00e5503c88988833013481999d8f970c-800wi" alt="person on bmw"/>
-            <a className="btn-floating halfway-fab waves-effect waves-light teal"><i className="small material-icons">airport_shuttle</i></a>
-          <div className="card-content">
-            <a href="<Trip />">View All Trips!</a>
+    const { tripsShowing, addTrip } = this.state
+      if (tripsShowing) {
+        return(
+          <Trip />
+        )
+      } else if (addTrip) {
+        return(
+          <LocationList />
+        )
+      } else
+      return (
+      <div>
+        <div className="App">
+          <header style={styles.header}>
+            <h1 className="App-title">Welcome to Your Trip Tracker!</h1>
+          </header>
+        </div>
+        <div className="row">
+          <div className="col s6 offset-s3">
+            <div className="card">
+              <div className="card-image">
+                <img src="http://ritzybee.typepad.com/.a/6a00e5503c88988833013481999d8f970c-800wi" alt="person on bmw"/>
+                <a className="btn-floating halfway-fab waves-effect waves-light teal"><i className="small material-icons">airport_shuttle</i></a>
+                <div className="card-content">
+                  <p style={ styles.link } onClick={() => this.viewTrip()}>View All Trips!</p>
+                  <br />
+                  <p style={ styles.link } onClick={ () => this.addTrip()}>Add A Trip</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-      </div>
-      </div>
     </div>
 
     );
@@ -37,6 +64,10 @@ const styles = {
     textAlign: "center",
     fontFamily: 'Coiny',
   },
+  link: {
+    color: 'blue',
+    cursor: 'pointer',
+  }
 
 }
 
