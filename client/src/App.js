@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import Trip from './components/Trip';
 import LocationList from './components/LocationList';
+import axios from 'axios';
 
 class App extends Component {
-  state={ tripsShowing: false }
+  state={ tripsShowing: false, trips: [] }
+
+  componentDidMount() {
+    axios.get('/api/trips')
+      .then( res => this.setState({ trips: res.data }) )
+  }
 
   viewTrip() {
     const {tripsShowing} = this.state
@@ -14,7 +20,7 @@ class App extends Component {
     const { tripsShowing, addTrip } = this.state
       if (tripsShowing) {
         return(
-          <Trip />
+          <Trip trips={this.state.trips}/>
         )
       } else
       return (

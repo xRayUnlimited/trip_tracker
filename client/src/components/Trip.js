@@ -21,6 +21,15 @@ class Trip extends React.Component {
             <h2 className="App-title">Trips</h2>
           </header>
         </div>
+        <div>
+        { this.props.trips.map( trip => {
+          return(
+            <div key={trip.id}>
+             <p> {trip.name} </p>
+            </div>
+          )
+        })}
+      </div>
         <TripForm />
         </div>
       )
@@ -116,6 +125,7 @@ class Trip extends React.Component {
               </div>
             </div>
           </div>
+    
         </div>
       )
     }
