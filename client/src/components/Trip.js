@@ -22,13 +22,7 @@ class Trip extends React.Component {
           </header>
         </div>
         <div>
-        { this.props.trips.map( trip => {
-          return(
-            <div key={trip.id}>
-             <p> {trip.name} </p>
-            </div>
-          )
-        })}
+
       </div>
         <TripForm addTrip={this.props.addTrip}/>
         </div>
@@ -41,15 +35,22 @@ class Trip extends React.Component {
               <h2 className="App-title">Add Trips</h2>
             </header>
           </div>
+          { this.props.trips.map( trip => {
+          return(
+            <div key={trip.id}>
+             <p> {trip.name} </p>
+            </div>
+          )
+        })}
           <button className="waves-effect teal lighten-3 btn"
-          onClick={() => this.toggleTrip() }> Add Trip </button>
+          onClick={ () => this.addTrip() }> Add Trip </button>
           <div>
             <div className="row">
               <div className="col s12 m6">
                 <div className="card">
                   <div className="card-image">
-                    <img src="https://wikitravel.org/upload/en/2/23/Us-ca-sanfran-goldengate.jpg" alt = "San Fransisco" />
-                      <span className="card-title">San Francisco</span>
+                    <img src="https://wikitravel.org/upload/en/2/23/Us-ca-sanfran-goldengate.jpg" />
+                      <span className="card-title"></span>
                   </div>
                   <div className="card-content">
                     <p>San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
