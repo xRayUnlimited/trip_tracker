@@ -24,7 +24,12 @@ class Trip extends React.Component {
         <div>
 
       </div>
+<<<<<<< HEAD
         <TripForm addTrip={this.props.addTrip}/>
+=======
+        <TripForm />
+        
+>>>>>>> changes
         </div>
       )
     } else {
