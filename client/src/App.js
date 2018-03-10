@@ -11,6 +11,14 @@ class App extends Component {
       .then( res => this.setState({ trips: res.data }) )
   }
 
+  addTrip = (newTrip) => {
+    axios.post('/api/trips', newTrip)
+      .then(res => {
+        const { trips } = this.state;
+        this.setState({ trips: [res.data, ...trips] })
+      })
+  }
+
   viewTrip() {
     const {tripsShowing} = this.state
     this.setState({ tripsShowing: !tripsShowing })
@@ -20,7 +28,7 @@ class App extends Component {
     const { tripsShowing, addTrip } = this.state
       if (tripsShowing) {
         return(
-          <Trip trips={this.state.trips}/>
+          <Trip trips={this.state.trips} addTrip={this.addTrip}/>
         )
       } else
       return (

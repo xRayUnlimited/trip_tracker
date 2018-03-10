@@ -4,16 +4,16 @@ import axios from 'axios';
 
 
 class Trip extends React.Component {
-  state={ addTrip: false }
+  state={ toggleTrip: false }
 
-  addTrip = () => {
-    const {addTrip} = this.state
-    this.setState({ addTrip: !addTrip })
+  toggleTrip = () => {
+    const {toggleTrip} = this.state
+    this.setState({ toggleTrip: !toggleTrip })
   }
 
     render() {
-      const { addTrip } = this.state;
-     if (addTrip) {
+      const { toggleTrip } = this.state;
+     if (toggleTrip) {
       return(
         <div>
         <div className="App">
@@ -30,7 +30,7 @@ class Trip extends React.Component {
           )
         })}
       </div>
-        <TripForm />
+        <TripForm addTrip={this.props.addTrip}/>
         </div>
       )
     } else {
@@ -42,7 +42,7 @@ class Trip extends React.Component {
             </header>
           </div>
           <button className="waves-effect teal lighten-3 btn"
-          onClick={() => this.addTrip() }> Add Trip </button>
+          onClick={() => this.toggleTrip() }> Add Trip </button>
           <div>
             <div className="row">
               <div className="col s12 m6">
